@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Varun's Friend Finder</title>
+
+	<!--Reset CSS-->
+	<link rel="stylesheet" type="text/css" href="reset.css">
+
+	<!--Linking Bootswatch-->
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/journal/bootstrap.min.css">
+</head>
+
+<body>
+<style>
+	body {background-color: #66ccff;}
+	footer {background-color: #000066;}
+</style>
+	<div class="container">
+	
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-4 text-center">
+				<h1>Survey Questions</h1>
+				<hr>
+				
+			<!--Personal Data Input-->
+				<h3>Your Name (Required)</h3>
+				<input type="text" name="" id="name" class="personData" required>
+				<h3>Your Photo (Required)</h3>
+				<input type="text" name="" id="image" class="personData" required>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-4 text-center">
+			
+			<!--Questions-->
+				<br>
+				<h3>Are you a cat person?</h3>
+				<select data-placeholder="" class="dropdown" id="q0">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>How about a dog person?</h3>
+				<select data-placeholder="" class="dropdown" id="q1">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>Do you like sci-fi?</h3>
+				<select data-placeholder="" class="dropdown" id="q2">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>What about rom-coms?</h3>
+	      		<select data-placeholder="" class="dropdown" id="q3">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>Do you like Game of Thrones?</h3>
+	      		<select data-placeholder="" class="dropdown" id="q4">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>Are you into pop music?</h3>
+	      		<select data-placeholder="" class="dropdown" id="q5">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>What about classic rock?</h3>
+	      		<select data-placeholder="" class="dropdown" id="q6">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>Do you want to travel and see a bunch of places?</h3>
+	      		<select data-placeholder="" class="dropdown" id="q7">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>Do you think that New York thin-crust pizza is the best kind of pizza?</h3>
+	      		<select data-placeholder="" class="dropdown" id="q8">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>
+
+				<br>
+				<h3>And for the last and most important question... do you like coding?</h3>
+	      		<select data-placeholder="" class="dropdown" id="q9">
+		 			<option value=""></option>
+	           		<option value="1">1 (Strongly Disagree)</option>
+	            	<option value="2">2</option>
+	            	<option value="3">3</option>
+	            	<option value="4">4</option>
+	            	<option value="5">5 (Strongly Agree)</option>
+	      		</select>      		
+			
+				<br>
+				<br>
+				<br>
+				<hr>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-4 text-center">
+			
+			<!--Submit Button-->
+				<button type="submit" class="btn btn-success btn-lg btn-block" id="submit">Submit</button>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+
+	<!--Footer-->
+	<footer class="footer">
+	    <div class="container">
+		    <p><a href="/api/friends">API</a> | <a href="https://github.com/vadusumi/friendfinder">GitHub Repo</a></p>
+	    </div>
+	</footer>
+
+	<!--Modal-->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Your Best Friend Match Is:</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p id="matchFriend">Some text in the modal.</p>
+	        <img id="matchPhoto" src="">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+<!--Linking JQuery-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$("#submit").on("click", function(){
+
+		//Validating form
+		function validate(){
+			var isValid = true;
+		  $('.personData').each(function() {
+		    if ( $(this).val() === '' )
+		        isValid = false;
+		  });
+
+		  $('.dropdown').each(function() {
+
+		  	if( $(this).val() === "")
+		  		isValid = false
+		  })
+		  return isValid;
+		};
+
+
+		//Object data to send to server
+		if (validate() == true)
+		{
+
+	    	var userData = 
+	    	{
+	    		name: $("#name").val(),
+	    		photo: $("#image").val(),
+	    		scores: [$("#q0").val(), $("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val()]
+	    	}
+
+
+	    	// Website URL
+	    	var currentURL = window.location.origin;
+
+	    	// Post request 
+	    	$.post(currentURL + "/api/friends", userData, function(data){
+
+	    		// Modal creation
+	    		$("#matchName").text(data.name);
+	    		$('#matchPhoto').attr("src", data.photo);
+		    	$("#myModal").modal('toggle');
+
+	    	});
+		}
+		else
+		{
+			alert("Must complete all fields.");
+		}
+    	
+    	return false;
+    });
+
+</script>
+
+
+</body>
+</html>
